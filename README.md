@@ -44,3 +44,14 @@ api.dosomething()
 abelzhu@tencent.com  
 
 # 
+
+# 关于使用
+设置环境变量
+export WX_TOKEN="xxxx"
+export WX_EncodingAESKey="xxxx"
+export WX_CORPID="xxxx"
+source ~/.zshrc
+
+cd callback 
+python3 app.py
+
