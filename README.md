@@ -47,11 +47,26 @@ abelzhu@tencent.com
 
 # 关于使用
 设置环境变量
+```shell
 export WX_TOKEN="xxxx"
 export WX_EncodingAESKey="xxxx"
 export WX_CORPID="xxxx"
-source ~/.zshrc
+
+vim ~/.pip/pip.conf 
+[global]
+index-url =  http://mirrors.aliyun.com/pypi/simple/ 
+[install]
+trusted-host =  http://mirrors.aliyun.com/pypi/simple/
+
+cd weworkapi_python
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install flask pycryptodome
 
 cd callback 
 python3 app.py
+
+```
+
+
 
