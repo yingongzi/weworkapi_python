@@ -11,9 +11,9 @@ import xml.etree.cElementTree as ET
 import sys
 
 if __name__ == "__main__":   
-   #假设企业在企业微信后台上设置的参数如下
-   sToken = "hJqcu3uJ9Tn2gXPmxx2w9kkCkCE2EPYo"
-   sEncodingAESKey = "6qkdMrq68nTKduznJYO1A37W2oEgpkMUvkttRToqhUt"
+   # 企业在企业微信后台上设置的密钥相关配置在这里 TODO
+   sToken = "xxxxxxx"
+   sEncodingAESKey = "xxxxxxx"
    sCorpID = "ww1436e0e65a779aee"
    '''
 	------------使用示例一：验证回调URL---------------
@@ -105,4 +105,4 @@ if __name__ == "__main__":
       sys.exit(1)
    #ret == 0 加密成功，企业需要将sEncryptMsg返回给企业号
    #TODO:
-   #HttpUitls.SetResponse(sEncryptMsg)
+   #HttpUitls.SetResponse(sEncryptMsg) #测试解密
